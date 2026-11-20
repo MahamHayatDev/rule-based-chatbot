@@ -4,6 +4,8 @@ A deterministic, rule-based chatbot built in Python. It cleans user input, match
 
 Built for **DecodeLabs | Artificial Intelligence | Project 1**.
 
+![Demo](assets/demo.png)
+
 ## Features
 
 - **Continuous input loop**: runs on a `while True` cycle with a clean exit command
@@ -11,7 +13,7 @@ Built for **DecodeLabs | Artificial Intelligence | Project 1**.
 - **Dictionary knowledge base**: 7 intents and 22 trigger phrases with O(1) lookup
 - **Fallback response**: a graceful reply for anything the bot doesn't understand
 - **Colored terminal UI**: banner and styled messages using `colorama`
-- **Unit tested**: 10 tests with Python's built-in `unittest`
+- **Unit tested**: 11 tests with Python's built-in `unittest`
 
 ## Architecture (IPO Model)
 
@@ -23,6 +25,8 @@ Input → Sanitization → Dictionary Lookup (.get) → Response → Loop
 
 ```
 rule-based-chatbot/
+├── assets/
+│   └── demo.png            # demo screenshot
 ├── chatbot/
 │   ├── config.py           # bot name, exit commands, fallback text
 │   ├── knowledge_base.py   # intents and responses
